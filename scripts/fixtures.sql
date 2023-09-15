@@ -656,6 +656,19 @@ VALUES
    'openid email profile organization',
    'http://localhost:3000/',
    'This is a minimal, nodeJS-based MonComptePro client, to be used for end-to-end testing.',
+   null, null, null, null),
+  (24,
+   'Évaluation budgétaire Strasbourg',
+   'client_id',
+   'client_secret',
+   ARRAY [
+     'http://localhost:8000/auth',
+     'https://plugin.palya.eu/auth',
+     ],
+   ARRAY []::varchar[],
+   'openid email profile organization',
+   'https://plugin.palya.eu',
+   'Outil d’évaluation budgétaire pour Strasbourg / Thomas Guillet',
    null, null, null, null)
 ON CONFLICT (id)
   DO UPDATE
